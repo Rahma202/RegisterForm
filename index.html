@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header"> 
+            <h2>CreatAccount</h2>
+        </div>
+        <form class="form-group" id="form">
+            <div class="form-control">
+                <label>First Name</label>
+                <input type="text" placeholder="Rahma" id="firstName" onkeydown="chekName(firstName,handelErorr)"/>
+                <p id="handelErorr" style="color: brown;" ></p>
+
+            </div>
+            <div class="form-control">
+                <label>Last Name</label>
+                <input type="text" placeholder="Mohammed HassAN"  id="lastName" onkeydown="chekName(lastName,handelLastName)" />
+                <p id="handelLastName" style="color: brown;" ></p>
+
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="text" placeholder="rahma@gmail.com" id="email" onkeydown="checkEmail(email,errorEmail)"/>
+                <p id="errorEmail" style="color: brown;" ></p>
+
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="rahma@gmail.com" id="password" onkeyup="EnterPass()"/>
+                <p  style="color: brown;" id="errorP" ></p>
+
+            </div>
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password"  id="confirmPassword" onkeyup="confirmPass(password,confirmPassword)"/>
+                <p  style="color: brown;" id="errorpass" ></p>
+
+
+            </div>
+            <button  class="btn" onclick="sub()">Submit</button>
+           
+
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
